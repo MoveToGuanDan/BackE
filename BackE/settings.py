@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 ]
 
-
+ASGI_APPLICATION = 'BackE.asgi.application'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -18,13 +18,13 @@ import Match.routing
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BackE.settings')
 
-application = get_asgi_application()
-
-'''application = ProtocolTypeRouter({
+application = ProtocolTypeRouter({
     "http": get_asgi_application(),
     "websocket": AuthMiddlewareStack(
         URLRouter(
             Match.routing.websocket_urlpatterns
         )
     ),
-})'''
+})
+
+# application = get_asgi_application()
